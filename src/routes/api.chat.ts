@@ -1,3 +1,4 @@
+import { IDENTITY } from '@/lib/identity'
 import {  buildChatContext,} from '@/lib/chat-context'
 import { createFileRoute } from '@tanstack/react-router'
 import {  chat,  toServerSentEventsResponse,} from '@tanstack/ai'
@@ -109,7 +110,7 @@ const {  summary,recentMessages,} = buildChatContext(
      )
 
 const systemPrompts = [
-  SYSTEM_PROMPT,
+  IDENTITY,
 ]
 
 if (documentContext) {

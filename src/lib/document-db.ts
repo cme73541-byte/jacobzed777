@@ -1,6 +1,6 @@
 import { supabase } from './supabase'
 
-export async function saveDocument(
+export async function getDocuments(
   sessionId: string,
   title: string,
   content: string

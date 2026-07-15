@@ -3,7 +3,7 @@ export interface ChatSummary {
 }
 
 export function buildSummary(
-  messages: any[]
+  messages: any[]=[]
 ): ChatSummary {
   return {
     summary: '',

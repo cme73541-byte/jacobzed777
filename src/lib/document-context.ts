@@ -8,7 +8,7 @@ export async function buildDocumentContext(
 
   return docs
     .map(
-      (d) =>
+      (d:Document) =>
         `Document: ${d.title}\n${d.content}`
     )
     .join('\n\n')
